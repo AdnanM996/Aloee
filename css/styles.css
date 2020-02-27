@@ -59,7 +59,12 @@ h1 {
   gap: 5rem;
   margin: 7.5rem auto;
   width: 80rem;
-  border: 1px solid red; }
+  border: 1px solid red;
+  overflow: hidden; }
+  .slider .wrapper {
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column; }
   .slider__item {
     background-color: skyblue;
     display: flex;
@@ -71,10 +76,21 @@ h1 {
       margin-top: 2.5rem;
       text-align: center; }
   .slider__handle {
-    height: .3rem;
+    height: 1rem;
+    border-radius: 10rem;
     width: 50%;
     background-color: #202020;
     cursor: grab; }
+
+.why-aloee .grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(1, 50rem);
+  gap: 5rem; }
+  .why-aloee .grid__item {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column; }
 
 .header {
   position: absolute;
@@ -129,5 +145,5 @@ li {
     flex-direction: column;
     height: 100%; }
 
-.collection {
+.collection, .why-aloee {
   padding: 10rem 0rem; }

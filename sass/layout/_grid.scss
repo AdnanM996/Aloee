@@ -6,7 +6,13 @@
     margin: 7.5rem auto;
     width: 80rem;
     border: 1px solid red;
-    //overflow: hidden;
+    overflow: hidden;
+
+    & .wrapper {
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+    }
 
     &__item {
         background-color: skyblue;
@@ -23,9 +29,26 @@
     }
 
     &__handle {
-        height: .3rem;
+        height: 1rem;
+        border-radius: 10rem;
         width: 50%;
         background-color: $color-secondary;
         cursor: grab;
+    }
+}
+
+.why-aloee {
+
+    & .grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: repeat(1, 50rem);
+        gap: 5rem;
+
+        &__item {
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+        }
     }
 }
