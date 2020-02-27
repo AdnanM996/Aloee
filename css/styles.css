@@ -53,7 +53,7 @@ h1 {
   font-weight: 400;
   color: #eee; }
 
-.cta, .cta--empty {
+.cta, .cta--empty, .cta--full {
   padding: 1.6rem 3.6rem;
   text-transform: uppercase;
   display: inline-block;
@@ -82,6 +82,9 @@ h1 {
       color: #eee; }
       .cta--empty:hover::after {
         transform: translateY(0%); }
+  .cta--full {
+    background-color: #202020;
+    color: #eee; }
 
 .slider {
   display: grid;
@@ -112,16 +115,19 @@ h1 {
     background-color: #202020;
     cursor: grab; }
 
-.why-aloee .grid {
+.why-aloee .grid,
+.facial-cleaner .grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
   height: 35rem;
   gap: 5rem; }
-  .why-aloee .grid__item {
+  .why-aloee .grid__item,
+  .facial-cleaner .grid__item {
     display: flex;
     justify-content: flex-start;
     flex-direction: column; }
-    .why-aloee .grid__item--bottom {
+    .why-aloee .grid__item--bottom,
+    .facial-cleaner .grid__item--bottom {
       /* display: flex;
                 justify-content: space-between;
                 align-items: flex-end;*/
@@ -180,5 +186,7 @@ li {
     flex-direction: column;
     height: 100%; }
 
-.collection, .why-aloee {
+.collection,
+.why-aloee,
+.facial-cleaner {
   padding: 10rem 0rem; }
