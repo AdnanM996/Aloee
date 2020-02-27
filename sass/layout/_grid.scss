@@ -42,13 +42,20 @@
     & .grid {
         display: grid;
         grid-template-columns: 2fr 1fr;
-        grid-template-rows: repeat(1, 50rem);
+        height: 35rem;
         gap: 5rem;
 
         &__item {
             display: flex;
             justify-content: flex-start;
             flex-direction: column;
+
+            &--bottom {
+               /* display: flex;
+                justify-content: space-between;
+                align-items: flex-end;*/
+                margin-top: 5rem;
+            }
         }
     }
 }

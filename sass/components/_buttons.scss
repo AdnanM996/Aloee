@@ -1,0 +1,41 @@
+.cta {
+    padding: 1.6rem 3.6rem;
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+    &--empty {
+        @extend .cta;
+        color: $color-secondary;
+        border: 1px solid $color-secondary;
+        transition: all .3s ease-in-out;
+
+        &:not(:last-child) {
+            margin-right: 2.5rem;
+        }
+
+        &::after {
+            top: 0%;
+            left: 0%;
+            height: 100%;
+            width: 100%;
+            background-color: $color-secondary;
+            z-index: -1;
+            transition: all .3s ease-in-out;
+            transform: translateY(100%);
+            border: 1px solid $color-secondary;
+        }
+
+        &:hover {
+            color: $color-primary;
+
+            &::after {
+                transform: translateY(0%);
+            }
+        }
+    }
+}
