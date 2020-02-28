@@ -19,6 +19,17 @@ body {
   background-color: #eee;
   color: #202020; }
 
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  vertical-align: bottom; }
+
+.wrapper {
+  width: 120rem;
+  margin: 0 auto;
+  display: flex; }
+
 html {
   font-size: 62.5%; }
 
@@ -30,3 +41,42 @@ body {
 
 h1 {
   font-family: "Cabin"; }
+
+.header {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: 2;
+  width: 100%;
+  padding: 4.5rem 0rem; }
+  .header .wrapper {
+    justify-content: space-between;
+    align-items: center; }
+
+ul {
+  list-style: none;
+  display: inline-flex; }
+
+li {
+  position: relative;
+  overflow: hidden; }
+  li:not(:last-child) {
+    margin-right: 5rem; }
+  li::after {
+    left: 0%;
+    bottom: 0%;
+    height: .1rem;
+    width: 100%;
+    background-color: #202020;
+    transform: translateX(-100%);
+    transition: all .3s ease-in-out; }
+  li:hover::after {
+    transform: translateX(0%); }
+
+.nav--links {
+  display: block;
+  color: #202020;
+  font-size: 1.8rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 160%; }
