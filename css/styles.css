@@ -53,6 +53,29 @@ h1 {
   font-weight: 400;
   color: #eee; }
 
+.slider {
+  display: grid;
+  grid-template-columns: repeat(5, 35rem);
+  gap: 5rem;
+  margin: 7.5rem auto;
+  width: 80rem;
+  border: 1px solid red; }
+  .slider__item {
+    background-color: skyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative; }
+    .slider__item--bottom {
+      margin-top: 2.5rem;
+      text-align: center; }
+  .slider__handle {
+    height: .3rem;
+    width: 50%;
+    background-color: #202020;
+    cursor: grab; }
+
 .header {
   position: absolute;
   top: 0%;
@@ -105,3 +128,6 @@ li {
     align-items: center;
     flex-direction: column;
     height: 100%; }
+
+.collection {
+  padding: 10rem 0rem; }

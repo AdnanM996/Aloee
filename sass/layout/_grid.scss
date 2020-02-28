@@ -1,0 +1,31 @@
+.slider {
+    display: grid;
+    grid-template-columns: repeat(5, 35rem);
+    //grid-template-rows: 55rem;
+    gap: 5rem;
+    margin: 7.5rem auto;
+    width: 80rem;
+    border: 1px solid red;
+    //overflow: hidden;
+
+    &__item {
+        background-color: skyblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+
+        &--bottom {
+           margin-top: 2.5rem;
+           text-align: center;
+        }
+    }
+
+    &__handle {
+        height: .3rem;
+        width: 50%;
+        background-color: $color-secondary;
+        cursor: grab;
+    }
+}
