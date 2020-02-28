@@ -7,13 +7,25 @@ html {
 
 body {
     font-family: $font-primary;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: 300;
     line-height: 120%;
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
     font-family: $font-secondary;
+    line-height: 180%;
+    text-transform: uppercase;
+}
+
+h6 {
+    margin-bottom: 2.5rem;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: $color-secondary;
 }
 
 .hero {

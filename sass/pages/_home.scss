@@ -19,3 +19,11 @@
 .facial-cleaner {
     padding: 10rem 0rem;
 }
+
+.collection {
+    & .wrapper {
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}

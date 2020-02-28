@@ -4,8 +4,7 @@
     //grid-template-rows: 55rem;
     gap: 5rem;
     margin: 7.5rem auto;
-    width: 80rem;
-    border: 1px solid red;
+    width: 90rem;
     overflow: hidden;
 
     & .wrapper {
@@ -15,7 +14,6 @@
     }
 
     &__item {
-        background-color: skyblue;
         display: flex;
         justify-content: center;
         align-items: center;
